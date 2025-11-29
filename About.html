@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Learn about Deeprovia - our mission, team, and approach to creating innovative solutions">
+    <meta name="author" content="">
+    <title>About Us | Deeprovia</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Bootstrap CSS (loads first)-->
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Inline custom CSS (loads after Bootstrap)-->
+    <style>
+      :root {
+        --primary: #E30B5C;
+        --secondary: #ffa896;
+        --light: #ffdab9;
+        --dark: #1a1a2e;
+      }
+      
+      body {
+        background-color: var(--light) !important;
+        color: #333;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      
+      .bg-custom-primary {
+        background-color: var(--primary) !important;
+      }
+      
+      .bg-custom-secondary {
+        background-color: var(--secondary) !important;
+      }
+      
+      .bg-custom-light {
+        background-color: var(--light) !important;
+      }
+      
+      .text-primary {
+        color: var(--primary) !important;
+      }
+      
+      .text-secondary {
+        color: var(--dark) !important;
+      }
+      
+      .card {
+        border: none;
+        transition: transform 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .hero-section {
+        padding: 5rem 0;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        color: white;
+        border-radius: 0 0 2rem 2rem;
+        margin-bottom: 3rem;
+      }
+      
+      .team-img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .section-title {
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+      }
+      
+      .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background-color: var(--primary);
+        border-radius: 2px;
+      }
+      
+      .center-title:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .value-icon {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+      }
+      
+      .img-placeholder {
+        background-color: #e9ecef;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        border-radius: 0.5rem;
+      }
+
+
+        /* Footer */
+        .footer {
+            background-color: #38000A;
+            color: white;
+            padding: 70px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .footer-about p {
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--dark);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--dark);
+            transform: translateY(-3px);
+        }
+        
+        .footer-heading {
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #38000A;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ffffff !important;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ffffff !important;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light py-3 bg-custom-primary">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html">
+            <span class="fw-bolder text-white">Deeprovia</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-white active" href="About.html">About</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="container px-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h1 class="display-4 fw-bold mb-4">Innovating with Purpose</h1>
+              <p class="lead mb-4">At Deeprovia, we bridge the gap between technology and human needs, creating solutions that matter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page Content-->
+      <div class="container px-5 my-5">
+        <!-- About Intro Section -->
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="section-title">Our Story</h2>
+            <p class="lead">Founded on the principles of innovation and social impact, Deeprovia emerged from a simple idea: technology should serve people, not the other way around.</p>
+            <p>We specialize in creating adaptive solutions that address compatibility gaps between emerging technologies and real-world applications. Our approach combines technical expertise with deep understanding of human behavior and community dynamics.</p>
+          </div>
+          
+
+               <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://i.ibb.co/1Y0bbvLp/360-F-1215496106-e5-Yof-F2p-WZTA6-Dxq-TEPzg2k-BCRZUp8q1-removebg-preview-removebg-preview.png" alt="360-F-1215496106-e5-Yof-F2p-WZTA6-Dxq-TEPzg2k-BCRZUp8q1-removebg-preview-removebg-preview"  ><div>
+               
+            
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="row mb-5">
+          <div class="col-12 text-center mb-5">
+            <h2 class="section-title center-title">Our Values</h2>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow border-0 rounded-4 p-4 text-center">
+              <div class="value-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h3 class="h4">Innovation</h3>
+              <p>We embrace cutting-edge technologies while maintaining practical, human-centered approaches to problem-solving.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow border-0 rounded-4 p-4 text-center">
+              <div class="value-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="h4">Community</h3>
+              <p>We believe that sustainable solutions emerge from understanding and engaging with the communities we serve.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow border-0 rounded-4 p-4 text-center">
+              <div class="value-icon">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <h3 class="h4">Adaptability</h3>
+              <p>In a rapidly changing technological landscape, we prioritize flexible, future-proof solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section-->
+        <section class="mb-5">
+          <h2 class="section-title">Our Expertise</h2>
+          
+          <!-- Experience Card 1-->
+          <div class="card shadow border-0 rounded-4 mb-4 bg-custom-secondary">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                  
+
+
+
+               <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"  
+src="https://i.ibb.co/Y4KGx6wV/person-front-computer-working-html-23-2150040412-removebg-preview.png" alt="person-front-computer-working-html-23-2150040412-removebg-preview"><div>
+               
+                  
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <h3 class="text-primary fw-bolder mb-3">Web Technologies</h3>
+                  <p>At Deeprovia, we harness raw, unfiltered approaches to address compatibility gaps at the end of our product-service pipeline. By tackling these gaps head-on, we ensure that every solution we deliver is perfectly aligned with our clients' needs.</p>
+                  <p>Our expertise spans responsive design, progressive web applications, and accessible interfaces that work across all platforms and devices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            </section>
+          
+          <!-- Experience Card 2-->
+        <section>
+          <div class="card shadow border-0 rounded-4 mb-4 bg-custom-secondary">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col-lg-8">
+                  <h3 class="text-primary fw-bolder mb-3">Design Services</h3>
+                  <p>Our innovative methods bridge the divide between expectation and reality, providing seamless, adaptive, and sustainable results. Whether in experiential learning, conservation, or urban tourism, our approach guarantees that our clients experience a smooth, efficient transition from challenge to opportunity.</p>
+                  <p>We combine user research, prototyping, and iterative testing to create designs that are both beautiful and functional.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                  
+               <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"   
+src="https://i.ibb.co/bMg9VXNP/mixed-group-of-business-people-sitting-around-a-table-and-talking-removebg-preview.png" alt="mixed-group-of-business-people-sitting-around-a-table-and-talking-removebg-preview" ><div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Philosophy Section-->
+        <section class="mb-5">
+          <h2 class="section-title">Our Philosophy</h2>
+          
+          <!-- Philosophy Card 1-->
+          <div class="card shadow border-0 rounded-4 mb-4 bg-custom-secondary">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                
+        
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <h3 class="text-secondary fw-bolder mb-3">Tech Dynamism</h3>
+                  <p>Continuous learning ensures we are abreast of all the latest happenings in the tech space. We thus are able to create dated solutions in this regard.</p>
+                  <p>We maintain a culture of curiosity and experimentation, allowing us to anticipate trends rather than simply react to them.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Philosophy Card 2-->
+          <div class="card shadow border-0 rounded-4 mb-4 bg-custom-secondary">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col-lg-8">
+                  <h3 class="text-secondary fw-bolder mb-3">Society Compatibility</h3>
+                  <p>By keeping our foot on the ground, we believe organic social traction is foundational to how society evolves, technology just improves and makes it more efficient.</p>
+                  <p>Our solutions are designed to integrate seamlessly into existing social structures, enhancing rather than disrupting community dynamics.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+    
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="mb-5">
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h2 class="section-title center-title">Our Team</h2>
+              <p class="lead">Diverse expertise, shared vision</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100 shadow border-0 rounded-4 p-4 text-center style= background-color:transparent !important">
+
+             <img class="img-fluid rounded-circle mb-4 px-4" src="https://i.ibb.co/zV4t0MLT/blue-abstract-waves-black-dots-23-2148231719.jpg" alt="blue-abstract-waves-black-dots-23-2148231719" >
+                
+               
+                <h3 class="h5">Alex Johnson</h3>
+                <p class="text-muted">Lead Developer</p>
+                <p>Specializing in full-stack development with a focus on scalable architecture.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100 shadow border-0 rounded-4 p-4 text-center">
+               
+             <img class="img-fluid rounded-circle mb-4 px-4" src="https://i.ibb.co/zV4t0MLT/blue-abstract-waves-black-dots-23-2148231719.jpg" alt="blue-abstract-waves-black-dots-23-2148231719" >
+                
+               
+  
+                
+
+                
+                <h3 class="h5">Maria Rodriguez</h3>
+                <p class="text-muted">UX Designer</p>
+                <p>Creating intuitive user experiences that bridge technology and human needs.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100 shadow border-0 rounded-4 p-4 text-center">
+
+                
+             <img class="img-fluid rounded-circle mb-4 px-4" src="https://i.ibb.co/zV4t0MLT/blue-abstract-waves-black-dots-23-2148231719.jpg" alt="blue-abstract-waves-black-dots-23-2148231719" >
+                
+               
+                
+                <h3 class="h5">David Kim</h3>
+                <p class="text-muted">Project Manager</p>
+                <p>Ensuring our projects deliver value while staying on time and within budget.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Strategies Section-->
+        <section class="mb-5">
+          <h2 class="section-title">Our Approach</h2>
+          
+          <!-- Strategies Card-->
+          <div class="card shadow border-0 rounded-4 mb-4 bg-custom-secondary">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+      
+                  
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <h3 class="text-secondary fw-bolder mb-3">Community Engagement</h3>
+                  <p>Community management is a skill we are very keen on mastering and influences the kind of technology we deploy.</p>
+                  <p>We employ co-design methodologies that involve stakeholders at every stage of development, ensuring our solutions are grounded in real needs and contexts.</p>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Stakeholder workshops</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Participatory design</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Continuous feedback loops</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer-->
+    
+
+<footer>
+
+  
+  <div style="margin: 20px auto; max-width: 1200px; text-align: center;color:#ffffff;background-color:#38000A">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 30px;">
+        <div class="footer-column" style="margin: 15px; min-width: 200px;">
+            <h3>UPTOPIA Solutions</h3>
+            <p style="margin: 15px 0;">Creating innovative solutions that bridge communities and technology for sustainable impact.</p>
+            <div style="margin-top: 20px;"></div>
+        </div>
+        
+        <div class="footer-column" style="margin: 15px; min-width: 200px;">
+            <h3>Values</h3>
+            <ul class="contact-info" style="list-style: none; padding: 0; margin: 15px 0;">
+                <li style="margin: 8px 0;">
+                    <span>Teamwork</span>
+                </li>
+                <li style="margin: 8px 0;">
+                    <span>Innovation</span>
+                </li>
+                <li style="margin: 8px 0;">
+                    <span>Reliability</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer-column" style="margin: 15px; min-width: 200px;">
+            <h3>Quick Links</h3>
+            <ul class="footer-links" style="list-style: none; padding: 0; margin: 15px 0;">
+                <li style="margin: 8px 0;"><a href="index.html">Home</a></li>
+                <li style="margin: 8px 0;"><a href="About.html">About</a></li>
+                <li style="margin: 8px 0;"><a href="projects.html">projects</a></li>
+                <li style="margin: 8px 0;"><a href="contact.html">contact</a></li
+            </ul>
+        </div>
+        
+        <div class="footer-column" style="margin: 15px; min-width: 200px;">
+            <h3>legal</h3>
+            <ul class="footer-links" style="list-style: none; padding: 0; margin: 15px 0;">
+                <li style="margin: 8px 0;"><a href="legal.html#privacy">Privacy Policy</a></li>
+                <li style="margin: 8px 0;"><a href="legal.html#terms">Terms of Service</a></li>
+                <li style="margin: 8px 0;"><a href="legal.html#cookie">Cookie Policy</a></li>
+                <li style="margin: 8px 0;"><a href="legal.html#accessibility">Accessibility</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column" style="margin: 15px; min-width: 200px;">
+            <h3>Contact Us</h3>
+            <ul class="contact-info" style="list-style: none; padding: 0; margin: 15px 0;">
+                <li style="margin: 8px 0;">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Remote Worldwide</span>
+                </li>
+                <li style="margin: 8px 0;">
+                    <i class="fas fa-phone"></i>
+                    <span>COMING - SOON</span>
+                </li>
+                <li style="margin: 8px 0;">
+                    <i class="fas fa-envelope"></i>
+                    <span>apacheremembers982@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="copyright" style="margin-top: 30px; text-align: center;">
+        <p style="margin: 10px 0;">&copy; 2023 UPTOPIA Solutions, all rights reserved.</p>
+        <p style="margin: 10px 0;">A hospitality and digital services company</p>
+    </div>
+</div>
+
+
+  
+    </footer>
+</body>
+</html>
+
+            
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
