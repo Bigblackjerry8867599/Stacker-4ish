@@ -122,19 +122,26 @@
       margin-bottom: 15px;
     }
 
-    /* Footer */
+    /* Footer - CENTERED FOR ALL DEVICES */
     footer {
       background-color: rgba(0,0,0,0.2);
       padding: 60px 0 30px;
       margin-top: 80px;
+      text-align: center;
     }
     .footer-heading {
       font-size: 1.2rem;
       margin-bottom: 20px;
+      text-align: center;
     }
     .footer-links {
       list-style: none;
       padding: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .footer-links li {
+      text-align: center;
     }
     .footer-links a {
       color: rgba(255,255,255,0.8);
@@ -153,6 +160,9 @@
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.2rem; }
       .section-title h2 { font-size: 2rem; }
+      footer {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -168,9 +178,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
           <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-          
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -200,9 +208,6 @@
         <div class="studies-grid">
           <div class="case-card">
             <div class="case-image">
-              
-
-
                  <img src="https://i.ibb.co/B2MLNxcJ/20260803-155638.jpg" alt="Community meetup 2027">
             </div>
             <div class="case-content">
@@ -226,10 +231,7 @@
         <div class="studies-grid">
           <div class="case-card">
             <div class="case-image">
-
-              <img src="https://i.ibb.co/1fVfhHQ9/20260803-154752.jpg" alt="20260803-154752" border="0"/ >
-              
-            
+              <img src="https://i.ibb.co/1fVfhHQ9/20260803-154752.jpg" alt="20260803-154752" border="0"/>
             </div>
             <div class="case-content">
               <span class="case-tag">Mark Your Calendars</span>
@@ -257,11 +259,9 @@
             <div class="case-content">
               <span class="case-tag"> Mission outreaches </span>
               <h3>Doing Better Together</h3>
-             
-            <p>To increase membership ,we may visit businesses,industry events and business support organisations inorder to make first contact and build strategic relationships and networks. </p>
-
+              <p>To increase membership ,we may visit businesses,industry events and business support organisations inorder to make first contact and build strategic relationships and networks. </p>
               <h3>We have a plan </h3>
-            <p> To build with a 40+ companies(In 12 months) .</p>
+              <p> To build with a 40+ companies(In 12 months) .</p>
               <p> connects include accelerators,industry associations and trade barazas/fairs  </p>
             </div>
           </div>
@@ -282,10 +282,7 @@
             <div class="case-content">
               <span class="case-tag"> Titles </span>
               <h3> Theme ideas </h3>
-              
-                      
               <p> Event Themes are usually centred around the mission.They may include talks on philanthropy and deep dives into the 1-1-1 model. </p>
-       
             </div>
           </div>
         </div>
@@ -296,12 +293,12 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-3">
+      <div class="row g-4 justify-content-center text-center">
+        <div class="col-md-3 text-center">
           <h3 class="footer-heading">Pledge1% Uganda Chapter</h3>
           <p>Innovation in philanthropy.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 text-center">
           <h3 class="footer-heading">Values</h3>
           <ul class="footer-links">
             <li>Teamwork</li>
@@ -309,7 +306,7 @@
             <li>Reliability</li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 text-center">
           <h3 class="footer-heading">Quick Links</h3>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
@@ -318,7 +315,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 text-center">
           <h3 class="footer-heading">Contact Us</h3>
           <ul class="footer-links">
             <li><i class="bi bi-geo-alt"></i> Area base: Kampala</li>
@@ -337,4 +334,4 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-  </html>
+</html>
